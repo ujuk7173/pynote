@@ -21,6 +21,12 @@ for i in lst:
             print (i[0], i[1])
             count += 1
 
+
+
+
+
+
+# solution2
 # list comprehension
 n =int(input())
 nlist = [input().split() for i in range(n)]
