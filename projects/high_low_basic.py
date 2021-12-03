@@ -22,11 +22,11 @@ while True:
         print ("Higher...")
     else:
         print ("You guessed it! The number was", num)
-        print ("Guessed in %d treis. \n" % (tries))
+        print ("Guessed in %d tries. \n" % (tries))
         break
 
     if tries == max_guesses:
-        print ("You have had %d guesses. Game over." % max_guesses)
+        print("GAME OVER! You tried %d times."%tries)
         break
    
 

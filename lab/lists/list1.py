@@ -70,9 +70,6 @@ print(my_list[:])
 
 # Correcting mistake values in a list
 odd = [2, 4, 6, 8]
-
-
-
 # add or change
 # change the 1st item
 odd[0] = 1
