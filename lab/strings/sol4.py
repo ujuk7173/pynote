@@ -1,6 +1,7 @@
 # bj 1152: counting words
 
 x = input().split()
+print(x)
 print(len(x))
 
 # x = input()

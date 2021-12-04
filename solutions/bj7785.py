@@ -1,20 +1,18 @@
-#회사에있는사람
-
+# 회사에있는사람 (백준7785)
 n = int(input())
-#딕셔너리로 받아서 value를 enter면 1을 넣고 leave면 0으로 바꾼다.
-#최종으로 1이 있는 키 출력
-room = {}
-for tc in range(1,n+1):
-    name,value = input().split()
-    if value == 'enter':
-        room[name] = 1
-    else:
-        room[name] = 0
-res = []
-for key,value in room.items():
-    if value == 1:
-        #사전 순의 역순으로 한 줄에 한 명씩 출력
-        res.append(key)
-res.sort(reverse=True)
-for i in range(len(res)):
-    print(res[i])
+dict = {} # 빈 딕셔너리 생성
+# n개의 기록 입력받기
+for i in range(n):
+	name, el = input().split() # baha enter
+	if el == 'enter':
+		dict[name] = 1 # baha 1
+	else:
+		dict[name] = 0
+lst = []
+for key, value in dict.items():
+	if value == 1:
+		lst.append(value)
+# 역순으로 정렬
+lst.sort(reverse=True)
+for i in lst:
+	print(i)

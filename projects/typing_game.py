@@ -3,19 +3,18 @@ import time
 
 words = ["cat", "dog", "fox", "monkey", "mouse", "panda", "frog", "snake", "wolf", "veggie pizza is the best pizza"]
 
-n = 1
 print("Press 'enter' to start!")
 input()
 start = time.time()
 
 question = random.choice(words)
-
+n = 1
 while n <= 5:
     print("-- word #{} --".format(n))
     print(question)
     answer = input()
 
-    if (question == answer):
+    if question == answer:
         print("** Success! **")
         n = n+1
         question = random.choice(words)
