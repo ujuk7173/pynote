@@ -1,6 +1,4 @@
 # 회문
-
-
 def is_palindrome(s):
     return s == s[::-1]
 
@@ -14,6 +12,7 @@ def is_almost_palindrome(s):
             return True
 
     return False
+    
 #driver code
 t = int(input()) 
 lst = []
