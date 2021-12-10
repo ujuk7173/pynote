@@ -19,6 +19,9 @@ for i in range(T):
             print("NO")
 
 
+
+
+
 # Python3 code to Check for 
 # balanced parentheses in an expression
 open_list = ["[","{","("]

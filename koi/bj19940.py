@@ -13,6 +13,13 @@ for _ in range(int(input())):
         tens += 1
         ones -= 10
 
+    # buttons[0] = sixties
+    # if tens >= 0: buttons[1] = abs(tens)
+    # else: buttons[2] = abs(tens)
+    # if ones >= 0: buttons[3] = abs(ones)
+    # else: buttons[4] = abs(ones)
+    # print(*buttons)
+
     buttons[0] = sixties
     buttons[2-(tens >= 0)] = abs(tens)
     buttons[4-(ones >= 0)] = abs(ones)

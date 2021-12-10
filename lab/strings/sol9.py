@@ -2,6 +2,7 @@
 n = int(input())
 numbers = input()
 sum=0
-for i in range(n):
-    sum += int(numbers[i])
+for i in numbers:
+    sum += int(i)
+
 print(sum)
