@@ -47,7 +47,7 @@ for x in list1:
     for y in list2:
         if x == y:
             print(True)
-        break
+            break
 
 # ex5
 # count the number of common members in two lists

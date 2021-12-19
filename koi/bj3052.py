@@ -1,4 +1,4 @@
-#나머
+#나머지
 # solution1
 lst=[]
 for i in range(10):

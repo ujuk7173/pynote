@@ -1,3 +1,4 @@
+# 세로읽기
 s = [input() for i in range(5)]
 max_length = len(max(s,key=len))
 
