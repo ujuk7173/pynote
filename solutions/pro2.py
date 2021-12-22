@@ -1,5 +1,5 @@
 # 체육복 -greedy
-#solution1 - dictionary 
+#solution1 
 def solution(n, lost, reserve):
     u = [1] * (n + 2)  # initialize with 1
     for i in lost:

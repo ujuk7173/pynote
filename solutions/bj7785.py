@@ -11,7 +11,7 @@ for i in range(n):
 lst = []
 for key, value in dict.items():
 	if value == 1:
-		lst.append(value)
+		lst.append(key)
 # 역순으로 정렬
 lst.sort(reverse=True)
 for i in lst:
