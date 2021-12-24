@@ -1,28 +1,27 @@
 import random
 import time
-
+print('Press enter to start!')
+input()
+# log the starting time
+start = time.time() 
+# create a list of words
 words = ["cat", "dog", "fox", "monkey", "mouse", "panda", "frog", "snake", "wolf", "veggie pizza is the best pizza"]
 
-print("Press 'enter' to start!")
-input()
-start = time.time()
-
-question = random.choice(words)
-n = 1
-while n <= 5:
-    print("-- word #{} --".format(n))
-    print(question)
-    answer = input()
-
-    if question == answer:
-        print("** Success! **")
-        n = n+1
-        question = random.choice(words)
-
-    else :
-        print("** Fail! **")
-
+# score
+count = 0 
+# repeat 5 times
+for i in range(5):
+	dunno = random.choice(words)
+	print(dunno)
+	# get user input
+	answer = input('Enter: ')
+	if dunno == answer:
+		print('correct!')
+		count = count + 1
+	else:
+		print('incorrect!')
+# end
 end = time.time()
-time_game = end - start
-time_game = format(time_game, ".2f")
-print("time :", time_game, "seconds")
+your_time = end - start
+print(format(your_time,".2f"))
+print('score:',count,'yay')
