@@ -18,7 +18,7 @@ print(solution(3,[3],[1]))
 
 # solution2 - set
 def solution2(n, lost, reserve):
-    s = set(list) & set(reserve)
+    s = set(lost) & set(reserve)
     l = set(lost) - s
     r = set(reserve) - s
     for x in sorted(r):
@@ -27,3 +27,6 @@ def solution2(n, lost, reserve):
         elif x + 1 in l:
             l.remove(x + 1)
     return n - len(l)
+
+print(solution(5,[2,4],[3]))
+print(solution(3,[3],[1]))
